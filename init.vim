@@ -48,6 +48,9 @@ Plug 'plasticboy/vim-markdown'
 "Modify surrounding chars, such as parantheses & quotes
 Plug 'tpope/vim-surround'
 
+"NerdTree
+Plug 'scrooloose/nerdtree'
+
 call plug#end()
 
 "Enable vim-jsx also for .js files
@@ -97,6 +100,9 @@ autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --
 " FZF
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
+"NerdTree autoopen
+autocmd VimEnter * NERDTree | wincmd p
+
 colorscheme gruvbox
 
 set background=dark
@@ -122,7 +128,7 @@ let mapleader="\<space>"
 nnoremap <leader>; A;<esc>
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
-nnoremap <leader>n :e %:h/
+nnoremap <Leader>n :call mkdir(expand("%:p:h"), "p")<cr>
 
 " Tabs
 nnoremap <c-t> :vsplit <cr>
@@ -142,3 +148,6 @@ nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gp :Gpush<cr>
 nnoremap <leader>gl :Gpull<cr>
+
+"NerdTree
+nnoremap <silent> <C-k><C-B> :NERDTreeToggle<cr>
