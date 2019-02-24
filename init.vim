@@ -94,6 +94,9 @@ autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --
     set statusline+=%P
 "}}}
 
+" FZF
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 colorscheme gruvbox
 
 set background=dark
