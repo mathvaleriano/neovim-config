@@ -134,3 +134,10 @@ nnoremap <c-p> :Files<cr>
 " it is necessary install siversearcher https://github.com/ggreer/the_silver_searcher
 " to use Ag
 nnoremap <c-f> :Ag<space>
+
+" Git
+nnoremap <leader>gc :Gcommit<cr>
+nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>gp :Gpush<cr>
+nnoremap <leader>gl :Gpull<cr>
