@@ -1,6 +1,7 @@
 call plug#begin()
 "Git integration
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Auto close () {} []
 Plug 'jiangmiao/auto-pairs'
