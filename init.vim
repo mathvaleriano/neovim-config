@@ -131,10 +131,10 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
 " Tabs
 nnoremap <c-t> :vsplit <cr>
-nnoremap <A-j> <c-w><c-j>
-nnoremap <A-k> <c-w><c-k>
-nnoremap <A-l> <c-w><c-l>
-nnoremap <A-h> <c-w><c-h>
+nnoremap <c-j> <c-w><c-j>
+nnoremap <c-k> <c-w><c-k>
+nnoremap <c-l> <c-w><c-l>
+nnoremap <c-h> <c-w><c-h>
 
 nnoremap <c-p> :Files<cr>
 " it is necessary install siversearcher https://github.com/ggreer/the_silver_searcher
